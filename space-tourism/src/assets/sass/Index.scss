@@ -1,0 +1,43 @@
+@import './Root.scss';
+
+
+
+body {
+    background-color: $backgroundColor;
+    font-family: $normalText;
+    font-weight: 400;
+    font-style: normal;
+    color: $textWhite;
+
+    /*#region Fonts*/
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: $destaqueText;
+    }
+
+    h1 {
+        font-size: $heading1;
+    }
+
+    h2 {
+        font-size: $heading2;
+    }
+
+    h3 {
+        font-size: $heading3;
+    }
+
+    h4 {
+        font-size: $heading4;
+    }
+
+    h5 {
+        font-size: $heading5;
+        font-family: $normalText;
+    }
+
+    /*#endregion Fonts*/
+
+}

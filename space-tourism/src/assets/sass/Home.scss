@@ -1,0 +1,15 @@
+@import './Root.scss';
+
+body {
+    background-image: url(../img/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+        background-image: url(../img/home/background-home-tablet.jpg);
+    }
+
+    @media (min-width: $desktop) {
+        background-image: url(../img/home/background-home-desktop.jpg);
+    }
+}

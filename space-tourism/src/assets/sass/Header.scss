@@ -1,0 +1,44 @@
+@import './Root.scss';
+
+header {
+    width: 100%;
+    nav {
+        div.hamburger {
+            span {
+                position: relative;
+                left: calc(100% - 24px);
+                width: 24px;
+                height: 2.5px;
+                background-color: $white;
+                display: block;
+                margin-top: 5px;
+                z-index: 2;
+            }
+        }
+
+        div.menu {
+            position: absolute;
+            height: 100vh;
+            background-color: $backgroundNav;
+            z-index: 1;
+            right: 0;
+            top: 0;
+            margin-top: 0;
+
+            ul {
+                li {
+                    font-size: $navText;
+                    letter-spacing: $navSpace;
+                    padding: .5rem 0;
+
+                    span {
+                        font-weight: bold;
+                    }
+
+                    list-style: none;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
