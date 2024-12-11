@@ -1,21 +1,23 @@
 import Header from './components/Header';
 import Home from './components/Home';
+import Destination from './components/destination/Destination';
 import ErrorRoute from './components/ErrorRoute';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App container">
-      <Header />
-      <div className='Main'>
-        <Router>
+    <Router>
+      <div className="App container">
+        <Header />
+        <div className='Main'>
           <Routes>
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='*' element={<ErrorRoute/>}></Route>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/destination' element={<Destination />}></Route>
+            <Route path='*' element={<ErrorRoute />}></Route>
           </Routes>
-        </Router>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

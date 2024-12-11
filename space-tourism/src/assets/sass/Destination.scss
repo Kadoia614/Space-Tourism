@@ -1,0 +1,26 @@
+@import './Root.scss';
+
+body {
+    background-image: url(../img/destination/background-destination-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .destination-content{
+        .destination-world{
+            margin-top: 100px;
+        }
+    }
+
+}
+
+@media (min-width: $tablet) {
+    body {
+        background-image: url(../img/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: $desktop) {
+    body {
+        background-image: url(../img/destination/background-destination-desktop.jpg);
+    }
+}

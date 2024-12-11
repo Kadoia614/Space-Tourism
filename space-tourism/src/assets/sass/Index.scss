@@ -1,19 +1,31 @@
 @import './Root.scss';
 
-
-
 body {
+    padding: 0;
+    margin: 0;
     background-color: $backgroundColor;
     font-family: $normalText;
     font-weight: 400;
     font-style: normal;
     color: $textWhite;
 
+    .Main{
+        height: 100vh;
+        width: 100vw;
+    }
+
     /*#region Fonts*/
+    a {
+        text-decoration: none;
+    }
+
+
     h1,
     h2,
     h3,
     h4 {
+        text-transform: uppercase;
+        margin: 0;
         font-family: $destaqueText;
     }
 
@@ -34,10 +46,16 @@ body {
     }
 
     h5 {
+        text-transform: uppercase;
+        font-weight: inherit;
+        color: $textVar;
         font-size: $heading5;
-        font-family: $normalText;
+    }
+
+    p {
+        color: $textVar;
+        font-size: $normalP;
     }
 
     /*#endregion Fonts*/
-
 }

@@ -1,8 +1,8 @@
 //mixing configure
 
-$mobile: 320px;
-$tablet: 480px;
-$desktop: 980px;
+$mobile: 600px;
+$tablet: 768px;
+$desktop: 1200px;
 
 //font config
 $destaqueText: "Bellefair",
@@ -12,21 +12,29 @@ serif;
 
 //color config
 $white: #FFF;
-$backgroundNav: rgba(255, 255, 255, 0.04);
+$backgroundNavMobile: rgba(0, 0, 0, 0.8);
+$backgroundNav: rgba(255, 255, 255, 0.4);
 $backgroundColor: #0B0D17;
 $textWhite: $white;
 $textVar: #D0D6F9;
 
 //nav
 $navText: 16px;
+$navTextMobile: 12px;
 $navSpace: 2.7px;
 
 //fonte belafair
-$heading1: 150px;
-$heading2: 100px;
+$heading1: 80px;
+$heading2: 56px;
 $heading3: 56px;
-$heading4: 32px;
+$heading4: 20px;
 
 //font  Barlow Condensed
-$heading5: 28px;
+$heading5: 16px;
 $heading5-space: 4.72px;
+
+$sHeading1: 28px;
+$sHeading2: 14px;
+$sHeading2-space: 2.35px;
+
+$normalP: 15px;
