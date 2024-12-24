@@ -1,0 +1,76 @@
+@import './Root.scss';
+
+body {
+    .home {
+        background-image: url(../img/home/background-home-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        padding: 30px 0px;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow-y: auto;
+
+        .home-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 70px;
+            padding-inline: 30px;
+        }
+
+        .home-explore {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $white;
+            border-radius: 100%;
+            cursor: pointer;
+            
+            &::before{
+                content: "";
+                background-color: rgba(255,255,255,0.2);
+                border-radius: 100%;
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                transition: 500ms ease-in-out;
+
+            }
+
+            &:hover::before{
+                height: 200px;
+                width: 200px;
+            }
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablet) {
+    body {
+        .home {
+            background-image: url(../img/home/background-home-tablet.jpg);
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    body {
+        .home {
+            background-image: url(../img/home/background-home-desktop.jpg);
+        }
+    }
+}

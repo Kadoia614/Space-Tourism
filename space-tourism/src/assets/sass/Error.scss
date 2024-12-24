@@ -1,0 +1,20 @@
+body {
+    .error-content {
+        background: url(../img/home/background-home-mobile.jpg) 100% fixed no-repeat;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+
+
+        .error-content-description{
+            text-align: center;
+            padding-inline: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+    }
+}

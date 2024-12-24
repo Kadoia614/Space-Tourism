@@ -1,0 +1,61 @@
+@import './Root.scss';
+
+body {
+
+
+    .destination-content {
+        background-image: url(../img/destination/background-destination-mobile.jpg);
+        padding: 100px 24px 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .destination-world {
+            text-align: center;
+
+            img {
+                height: 170px;
+                width: 170px;
+            }
+        }
+
+        .destination-selection{
+            ul{
+                display: flex;
+                justify-content: space-around;
+                padding: 10px 25px;
+
+                li{
+                    cursor: pointer;
+                    font-family: $normalTextVar;
+                    list-style: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .destination-description {
+            text-align: center;
+        }
+
+        .destination-distance {
+
+            h5,
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media (min-width: $tablet) {
+    body {
+        background-image: url(../img/destination/background-destination-tablet.jpg);
+    }
+}
+
+@media (min-width: $desktop) {
+    body {
+        background-image: url(../img/destination/background-destination-desktop.jpg);
+    }
+}
