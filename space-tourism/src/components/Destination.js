@@ -4,7 +4,7 @@ import Mars from '../assets/img/destination/image-mars.png'
 import Europa from '../assets/img/destination/image-europa.png'
 import Titan from '../assets/img/destination/image-titan.png'
 import data from '../data/data.json'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 function Destination() {
     const [planetDestination, setPlanetDestination] = useState(0)
@@ -17,10 +17,9 @@ function Destination() {
 
     return (
         <div className='destination content'>
-            <div className='destination-content'>
-
+            <h5 className='title-page'><b>01</b>Pick your destination</h5>
+            <section className='image-section'>
                 <div className='destination-world'>
-                    <h5 className='title-page'><b>01</b>Pick your destination</h5>
                     <div className='destination-image'>
                         <img src={planetsImg[planetDestination]} alt={`planeta ${data.destinations[planetDestination].name}`}></img>
                     </div>
@@ -33,19 +32,26 @@ function Destination() {
                         <li className={planetDestination === 3 ? "active" : ""} onClick={() => setPlanetDestination(3)}>Titan</li>
                     </ul>
                 </div>
+            </section>
+
+            <section className='text padding-section'>
                 <div className='destination-description'>
                     <h2>{data.destinations[planetDestination].name}</h2>
                     <p>{data.destinations[planetDestination].description}</p>
                 </div>
                 <hr></hr>
                 <div className='destination-distance'>
-                    <h5>Avg. distance</h5>
-                    <h3>{data.destinations[planetDestination].distance}</h3>
+                    <div>
+                        <p>AVG. DISTANCE</p>
+                        <h3>{data.destinations[planetDestination].distance}</h3>
+                    </div>
 
-                    <h5>Est. travel time</h5>
-                    <h3>{data.destinations[planetDestination].travel}</h3>
+                    <div>
+                        <p>EST. TRAVEL TIME</p>
+                        <h3>{data.destinations[planetDestination].travel}</h3>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

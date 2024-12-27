@@ -2,56 +2,117 @@
 
 body {
 
+    .Main {
+        .destination {
+            background-image: url(../img/destination/background-destination-mobile.jpg);
 
-    .destination {
-        background-image: url(../img/destination/background-destination-mobile.jpg);
+            .destination-world {
+                img {
+                    height: 170px;
+                    width: 170px;
+                    animation: worldRotation 55s linear 0s infinite normal none;
 
-        .destination-world {
-            text-align: center;
-
-            img {
-                height: 170px;
-                width: 170px;
+                }
             }
-        }
 
-        .destination-selection{
-            ul{
-                display: flex;
-                justify-content: space-around;
-                padding: 10px 25px;
+            .destination-selection {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    padding: 0;
+                    margin: 25px 0;
 
-                li{
-                    cursor: pointer;
-                    font-family: $normalTextVar;
-                    text-transform: uppercase;
+                    li {
+                        cursor: pointer;
+                        font-family: $normalTextVar;
+                        text-transform: uppercase;
+                        position: relative;
+                        padding: 0.5rem 0;
+
+
+                        &.active {
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                height: 3px;
+                                width: 100%;
+                                background-color: $white;
+                            }
+                        }
+
+                        &:hover {
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                height: 3px;
+                                width: 100%;
+                                background-color: $whiteHover;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .destination-description {
+                text-align: center;
+            }
+
+            .destination-distance {
+
+                h5,
+                h3 {
+                    text-align: center;
                 }
             }
         }
-
-        .destination-description {
-            text-align: center;
-        }
-
-        .destination-distance {
-
-            h5,
-            h3 {
-                text-align: center;
-            }
-        }
     }
-
 }
 
 @media (min-width: $tablet) {
-    .content {
-        background-image: url(../img/destination/background-destination-tablet.jpg);
+    body {
+        .Main {
+            .destination {
+                background-image: url(../img/destination/background-destination-tablet.jpg);
+
+                .destination-world {
+                    img {
+                        height: 300px;
+                        width: 300px;
+                    }
+                }
+
+                .destination-distance {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                }
+            }
+        }
     }
 }
 
 @media (min-width: $desktop) {
-    .content {
-        background-image: url(../img/destination/background-destination-desktop.jpg);
+    body {
+        .Main {
+            .destination {
+                background-image: url(../img/destination/background-destination-desktop.jpg);
+            }
+        }
+    }
+}
+
+@keyframes worldRotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

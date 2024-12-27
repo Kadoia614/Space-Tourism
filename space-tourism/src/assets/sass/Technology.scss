@@ -1,0 +1,88 @@
+@import './Root.scss';
+
+body {
+    .Main {
+
+        .technology {
+
+
+            &.content {
+                padding-inline: 0;
+            }
+
+            .technology-image {
+                img {
+                    width: 100%;
+                }
+
+                border-bottom: 1px solid #383B4B;
+            }
+
+            .technology-selection {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 0;
+
+                    li {
+                        cursor: pointer;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 100%;
+                        border: 1px solid $backgroundNav;
+                        background-color: transparent;
+                        font-size: $heading5;
+
+                        &:hover {
+                            border: 1px solid $white;
+                        }
+
+                        &.active {
+                            background-color: $white;
+                            color: $textBlack;
+                        }
+
+                    }
+                }
+            }
+
+            .technology-description {
+                h5 {
+                    font-family: 'bellefair', serif;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: $tablet) {
+    body {
+        .Main {
+            .technology {
+                background-image: url(../img/technology/background-technology-tablet.jpg);
+
+                .padding-section {
+                    padding-inline: 150px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    body {
+        .Main {
+            .technology {
+                background-image: url(../img/technology/background-technology-desktop.jpg);
+
+            }
+
+        }
+    }
+}

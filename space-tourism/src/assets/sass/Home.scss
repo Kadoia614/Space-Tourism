@@ -1,52 +1,58 @@
 @import './Root.scss';
 
 body {
-    .home {
-        background-image: url(../img/home/background-home-mobile.jpg);
-        width: 100%;
-        min-height: 100vh;
-        padding-top: 90px !important;
-        display: flex;
-        gap: 50px;
+    .Main {
+        .home {
+            background-image: url(../img/home/background-home-mobile.jpg);
+            width: 100%;
+            min-height: 100vh;
+            padding-top: 90px;
 
-        h5{
-            color: $textVar;
-            font-family: "Barlow Condensed", serif;
-
-            &.title-page{
-                margin-bottom: 1.5rem !important;
+            .padding-section {
+                padding-inline: 150px;
+                gap: 50px;
             }
-        }
 
-        .home-explore {
-            position: relative;
-            height: 150px;
-            width: 150px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $white;
-            border-radius: 100%;
-            cursor: pointer;
-            
-            &::before{
-                content: "";
-                background-color: rgba(255,255,255,0.2);
-                border-radius: 100%;
-                position: absolute;
+            h5 {
+                color: $textVar;
+                font-family: $normalTextVar;
+
+                &.title-page {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+            .home-explore {
+                position: relative;
                 height: 150px;
                 width: 150px;
-                transition: 500ms ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $white;
+                border-radius: 100%;
+                cursor: pointer;
 
-            }
+                &::before {
+                    content: "";
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border-radius: 100%;
+                    position: absolute;
+                    height: 150px;
+                    width: 150px;
+                    transition: 500ms ease-in-out;
 
-            &:hover::before{
-                height: 200px;
-                width: 200px;
-            }
+                }
 
-            a {
-                color: #000;
+                &:hover::before {
+                    height: calc(100% + 50%);
+                    width: calc(100% + 50%);
+
+                }
+
+                a {
+                    color: #000;
+                }
             }
         }
     }
@@ -54,16 +60,29 @@ body {
 
 @media (min-width: $tablet) {
     body {
-        .home {
-            background-image: url(../img/home/background-home-tablet.jpg);
+        .Main {
+            .home {
+                background-image: url(../img/home/background-home-tablet.jpg);
+
+                .home-explore {
+                    height: 242px;
+                    width: 242px;
+                }
+            }
+
+            .padding-section {
+                padding-inline: 150px;
+            }
         }
     }
 }
 
 @media (min-width: $desktop) {
     body {
-        .home {
-            background-image: url(../img/home/background-home-desktop.jpg);
+        .Main {
+            .home {
+                background-image: url(../img/home/background-home-desktop.jpg);
+            }
         }
     }
 }

@@ -1,20 +1,49 @@
 @import './Root.scss';
 
-.crew {
-    background-image: url(../img/crew/background-crew-mobile.jpg);
+body {
+    .Main {
 
-    .crew-content {
-        .crew-image {
-            img {
-                height: 222px;
+        .crew {
+            background-image: url(../img/crew/background-crew-mobile.jpg);
+
+            .crew-image {
+                img {
+                    height: 572px;
+                }
+
+                border-bottom: 1px solid #383B4B;
             }
 
-            border-bottom: 1px solid #383B4B;
-        }
+            .crew-selection {
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 0;
 
-        .crew-description {
-            h5 {
-                font-family: 'bellefair', serif;
+                    li {
+                        cursor: pointer;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 100%;
+                        background-color: rgba(255, 255, 255, 0.175);
+
+                        &:hover {
+                            background-color: $whiteHover;
+                        }
+
+                        &.active {
+                            background-color: $white;
+                        }
+
+                    }
+                }
+            }
+
+            .crew-description {
+                h5 {
+                    font-family: 'bellefair', serif;
+                }
             }
         }
     }
@@ -22,13 +51,25 @@
 
 
 @media (min-width: $tablet) {
-    .content {
-        background-image: url(../img/crew/background-crew-tablet.jpg);
+    body {
+        .Main {
+            .Crew {
+                background-image: url(../img/crew/background-crew-tablet.jpg);
+            }
+        }
     }
 }
 
 @media (min-width: $desktop) {
-    .content {
-        background-image: url(../img/crew/background-crew-desktop.jpg);
+    body {
+        .Main {
+            .Crew {
+                background-image: url(../img/crew/background-crew-desktop.jpg);
+
+                &.content{
+
+                }
+            }
+        }
     }
 }

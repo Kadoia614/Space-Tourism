@@ -10,23 +10,46 @@ body {
     font-style: normal;
     color: $textWhite;
 
+    b {
+        margin-right: 1rem;
+    }
+
     .Main {
         height: 100vh;
         width: 100vw;
 
+        .padding-section {
+            padding-inline: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .content {
-            padding: 100px 30px 60px;
+            min-height: 100vh;
+            padding-top: 75px;
+            padding-bottom: 60px;
             box-sizing: border-box;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             text-align: center;
 
-            .title-page{
+
+            .title-page {
                 margin-bottom: 2.5rem;
+
+                b {
+                    color: $backgroundNav;
+                }
             }
 
             hr {
@@ -85,7 +108,54 @@ body {
     p {
         color: $textVar;
         font-size: $normalP;
+        line-height: 25px;
     }
 
     /*#endregion Fonts*/
 }
+
+@media (min-width: $tablet) {
+    body {
+        .Main {
+            .content {
+                .title-page {
+                    padding-inline: 30px;
+                    text-align: initial;
+                }
+            }
+        }
+
+        h1 {
+            font-size: $headingTablet1;
+        }
+
+        h2 {
+            font-size: $headingTablet2;
+        }
+
+        h3 {
+            font-size: $headingTablet3;
+        }
+
+        h4 {
+            font-size: $headingTablet4;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            font-weight: inherit;
+            margin-bottom: .5rem;
+            color: #FFF;
+            font-size: $headingTablet5;
+        }
+
+        p {
+            color: $textVar;
+            font-size: $normalPTablet;
+            line-height: 28px;
+
+        }
+    }
+}
+
+@media (min-width: $desktop) {}

@@ -13,13 +13,14 @@ $normalTextVar: "Barlow condensed",
 serif;
 //color config
 $white: #FFF;
+$whiteHover: rgba(255,255,255,0.5);
 
 $backgroundNavMobile: rgba(0, 0, 0, 0.8);
 $backgroundNav: rgba(255, 255, 255, 0.4);
 $backgroundColor: #0B0D17;
 
 $textWhite: $white;
-$textBlack: #000;
+$textBlack: #0B0D17;
 $textVar: #D0D6F9;
 
 //nav
@@ -33,8 +34,15 @@ $heading2: 56px;
 $heading3: 28px;
 $heading4: 24px;
 
+//tablet
+$headingTablet1: 150px;
+$headingTablet2: 80px;
+$headingTablet3: 28px;
+$headingTablet4: 40px;
+
 //font  Barlow Condensed
 $heading5: 16px;
+$headingTablet5: 24px;
 $heading5-space: 4.72px;
 
 $sHeading1: 28px;
@@ -42,3 +50,5 @@ $sHeading2: 14px;
 $sHeading2-space: 2.35px;
 
 $normalP: 15px;
+$normalPTablet: 16px;
+$normalPDesktop: 18px;
