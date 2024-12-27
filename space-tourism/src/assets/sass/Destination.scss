@@ -3,11 +3,8 @@
 body {
 
 
-    .destination-content {
+    .destination {
         background-image: url(../img/destination/background-destination-mobile.jpg);
-        padding: 100px 24px 50px;
-        background-size: cover;
-        background-repeat: no-repeat;
 
         .destination-world {
             text-align: center;
@@ -27,7 +24,6 @@ body {
                 li{
                     cursor: pointer;
                     font-family: $normalTextVar;
-                    list-style: none;
                     text-transform: uppercase;
                 }
             }
@@ -49,13 +45,13 @@ body {
 }
 
 @media (min-width: $tablet) {
-    body {
+    .content {
         background-image: url(../img/destination/background-destination-tablet.jpg);
     }
 }
 
 @media (min-width: $desktop) {
-    body {
+    .content {
         background-image: url(../img/destination/background-destination-desktop.jpg);
     }
 }

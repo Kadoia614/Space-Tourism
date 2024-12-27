@@ -3,26 +3,19 @@
 body {
     .home {
         background-image: url(../img/home/background-home-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
-        padding: 30px 0px;
         width: 100%;
         min-height: 100vh;
+        padding-top: 90px !important;
         display: flex;
         gap: 50px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        overflow-y: auto;
 
-        .home-content {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 70px;
-            padding-inline: 30px;
+        h5{
+            color: $textVar;
+            font-family: "Barlow Condensed", serif;
+
+            &.title-page{
+                margin-bottom: 1.5rem !important;
+            }
         }
 
         .home-explore {

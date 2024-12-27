@@ -16,33 +16,35 @@ function Destination() {
     ]
 
     return (
-        <div className='destination-content'>
+        <div className='destination content'>
+            <div className='destination-content'>
 
-            <div className='destination-world'>
-                <h5><b>01</b>Pick your destination</h5>
-                <div className='destination-image'>
-                    <img src={planetsImg[planetDestination]}></img>
+                <div className='destination-world'>
+                    <h5 className='title-page'><b>01</b>Pick your destination</h5>
+                    <div className='destination-image'>
+                        <img src={planetsImg[planetDestination]} alt={`planeta ${data.destinations[planetDestination].name}`}></img>
+                    </div>
                 </div>
-            </div>
-            <div className='destination-selection'>
-                <ul>
-                    <li className={planetDestination === 0? "active" : ""} onClick={()=>setPlanetDestination(0)}>Moon</li>
-                    <li className={planetDestination === 1? "active" : ""} onClick={()=>setPlanetDestination(1)}>Mars</li>
-                    <li className={planetDestination === 2? "active" : ""} onClick={()=>setPlanetDestination(2)}>Europa</li>
-                    <li className={planetDestination === 3? "active" : ""} onClick={()=>setPlanetDestination(3)}>Titan</li>
-                </ul>
-            </div>
-            <div className='destination-description'>
-                <h2>{data.destinations[planetDestination].name}</h2>
-                <p>{data.destinations[planetDestination].description}</p>
-            </div>
-            <hr></hr>
-            <div className='destination-distance'>
-                <h5>Avg. distance</h5>
-                <h3>{data.destinations[planetDestination].distance}</h3>
+                <div className='destination-selection'>
+                    <ul>
+                        <li className={planetDestination === 0 ? "active" : ""} onClick={() => setPlanetDestination(0)}>Moon</li>
+                        <li className={planetDestination === 1 ? "active" : ""} onClick={() => setPlanetDestination(1)}>Mars</li>
+                        <li className={planetDestination === 2 ? "active" : ""} onClick={() => setPlanetDestination(2)}>Europa</li>
+                        <li className={planetDestination === 3 ? "active" : ""} onClick={() => setPlanetDestination(3)}>Titan</li>
+                    </ul>
+                </div>
+                <div className='destination-description'>
+                    <h2>{data.destinations[planetDestination].name}</h2>
+                    <p>{data.destinations[planetDestination].description}</p>
+                </div>
+                <hr></hr>
+                <div className='destination-distance'>
+                    <h5>Avg. distance</h5>
+                    <h3>{data.destinations[planetDestination].distance}</h3>
 
-                <h5>Est. travel time</h5>
-                <h3>{data.destinations[planetDestination].travel}</h3>
+                    <h5>Est. travel time</h5>
+                    <h3>{data.destinations[planetDestination].travel}</h3>
+                </div>
             </div>
         </div>
     )

@@ -1,0 +1,34 @@
+@import './Root.scss';
+
+.crew {
+    background-image: url(../img/crew/background-crew-mobile.jpg);
+
+    .crew-content {
+        .crew-image {
+            img {
+                height: 222px;
+            }
+
+            border-bottom: 1px solid #383B4B;
+        }
+
+        .crew-description {
+            h5 {
+                font-family: 'bellefair', serif;
+            }
+        }
+    }
+}
+
+
+@media (min-width: $tablet) {
+    .content {
+        background-image: url(../img/crew/background-crew-tablet.jpg);
+    }
+}
+
+@media (min-width: $desktop) {
+    .content {
+        background-image: url(../img/crew/background-crew-desktop.jpg);
+    }
+}
