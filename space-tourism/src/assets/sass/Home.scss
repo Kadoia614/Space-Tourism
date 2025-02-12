@@ -81,7 +81,12 @@ body {
     body {
         .Main {
             .home {
+                padding-top: 200px;
                 background-image: url(../img/home/background-home-desktop.jpg);
+                &> .padding-section{
+                    display: flex;
+                    flex-direction: row;
+                }
             }
         }
     }

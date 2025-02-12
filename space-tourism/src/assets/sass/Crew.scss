@@ -8,7 +8,7 @@ body {
 
             .crew-image {
                 img {
-                    height: 572px;
+                    height: 222px;
                 }
 
                 border-bottom: 1px solid #383B4B;
@@ -53,8 +53,14 @@ body {
 @media (min-width: $tablet) {
     body {
         .Main {
-            .Crew {
+            .crew {
                 background-image: url(../img/crew/background-crew-tablet.jpg);
+
+                .crew-image {
+                    img {
+                        height: 572px;
+                    }
+                }
             }
         }
     }
@@ -65,10 +71,6 @@ body {
         .Main {
             .Crew {
                 background-image: url(../img/crew/background-crew-desktop.jpg);
-
-                &.content{
-
-                }
             }
         }
     }
