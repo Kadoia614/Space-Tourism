@@ -12,7 +12,7 @@ function Home() {
                         outer space and not hover kind of on the edge of it. Well sit back, and relax
                         because we’ll give you a truly out of this world experience!</p>
                 </div>
-                <Link to='/destination'>
+                <Link to='/Space-Tourism/Destination'>
                     <div className='home-explore'>
                         <h4 className='Explore'>EXPLORE</h4>
 

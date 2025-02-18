@@ -79,14 +79,22 @@ body {
 @media (min-width: $desktop) {
   body {
     .Main {
-      .home {
+      .home.content {
         padding-top: 200px;
         background-image: url(../img/home/background-home-desktop.jpg);
         & > .padding-section {
           display: flex;
           flex-direction: row;
+          justify-content: space-between;
+          p, h5{
+            text-align: start;
+          }
+          .home-description{
+            max-width: 450px;
+          }
         }
       }
     }
+
   }
 }
