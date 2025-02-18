@@ -20,7 +20,7 @@ function Header() {
                 <nav className={`nav ${open? "show": ""}`}>
                     <ul>
                         <li className='active'>
-                            <NavLink to={'/'}><b>00</b>  Home</NavLink>
+                            <NavLink to={'/Space-Tourism'}><b>00</b>  Home</NavLink>
                         </li>
                         <li>
                             <NavLink to={'/Destination'}><b>01</b> Destination </NavLink>
