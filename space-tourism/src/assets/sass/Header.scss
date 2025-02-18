@@ -58,15 +58,18 @@ header {
 
 @media (min-width: $tablet) {
   header {
+    max-width: unset;
     position: absolute;
     .hamburger {
       display: none;
     }
     nav {
+      right: 0;
+      left: unset;
       width: 70%;
       background-color: rgba(255, 255, 255, 0.05);
       height: 100%;
-      position: inherit;
+      position: absolute;
       padding-top: 0;
       transform: translateX(0%);
 
