@@ -14,9 +14,9 @@ function App() {
         <div className='Main'>
           <Routes>
             <Route path='/Space-Tourism' element={<Home />}></Route>
-            <Route path='/destination' element={<Destination />}></Route>
-            <Route path='/crew' element={<Crew />}></Route>
-            <Route path='/technology' element={<Technology />}></Route>
+            <Route path='/Space-Tourism/destination' element={<Destination />}></Route>
+            <Route path='/Space-Tourism/crew' element={<Crew />}></Route>
+            <Route path='/Space-Tourism/technology' element={<Technology />}></Route>
             <Route path='*' element={<ErrorRoute />}></Route>
           </Routes>
         </div>

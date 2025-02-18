@@ -23,13 +23,13 @@ function Header() {
                             <NavLink to={'/Space-Tourism'}><b>00</b>  Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/Destination'}><b>01</b> Destination </NavLink>
+                            <NavLink to={'/Space-Tourism/Destination'}><b>01</b> Destination </NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/Crew'}><b>02</b> Crew </NavLink>
+                            <NavLink to={'/Space-Tourism/Crew'}><b>02</b> Crew </NavLink>
                         </li>
                         <li>
-                            <NavLink to={'/Technology'}><b>03</b> Technology </NavLink>
+                            <NavLink to={'/Space-Tourism/Technology'}><b>03</b> Technology </NavLink>
                         </li>
                     </ul>
                 </nav>
